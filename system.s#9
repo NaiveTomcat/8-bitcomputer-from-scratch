@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<libraries>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<modules>
+<module name="CLOCK" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="DATA_REGISTOR" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="MEMORY_ADDRESS_REGISTOR" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="ALU" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="PROGRAM_COUNTER" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="RAM" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="INSTRUCTION_REGISTER" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="IO_PANEL" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+</modules>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<description>总架构图</description>
+<plain>
+<text x="17.78" y="149.86" size="6.4516" layer="91">8位数据总线
+8位地址总线
+8位指令总线
+
+IO采用在特定地址读写完成
+</text>
+</plain>
+<moduleinsts>
+<moduleinst name="CLOCK1" module="CLOCK" x="30.48" y="93.98">
+<attribute name="NAME" x="30.48" y="93.98" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="DATA_REGISTOR1" module="DATA_REGISTOR" x="139.7" y="50.8">
+<attribute name="NAME" x="139.7" y="50.8" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="DATA_REGISTOR2" module="DATA_REGISTOR" x="139.7" y="17.78">
+<attribute name="NAME" x="139.7" y="17.78" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="MEMORY_ADDRESS_REGISTOR1" module="MEMORY_ADDRESS_REGISTOR" x="30.48" y="50.8">
+<attribute name="NAME" x="30.48" y="50.8" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="ALU1" module="ALU" x="210.82" y="35.56">
+<attribute name="NAME" x="210.82" y="35.56" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="PROGRAM_COUNTER1" module="PROGRAM_COUNTER" x="139.7" y="93.98">
+<attribute name="NAME" x="139.7" y="93.98" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="RAM1" module="RAM" x="30.48" y="17.78">
+<attribute name="NAME" x="30.48" y="17.78" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="INSTRUCTION_REGISTER1" module="INSTRUCTION_REGISTER" x="30.48" y="-22.86">
+<attribute name="NAME" x="30.48" y="-22.86" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="IO_PANEL1" module="IO_PANEL" x="-15.24" y="17.78">
+<attribute name="NAME" x="-15.24" y="17.78" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+</moduleinsts>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</schematic>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>
