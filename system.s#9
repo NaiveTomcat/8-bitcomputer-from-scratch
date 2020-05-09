@@ -22450,6 +22450,9 @@ distributor Buerklin, 17G574</description>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="IC14" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*86" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="LS"/>
 <part name="IC15" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*86" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="LS"/>
+<part name="IC16" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*245" device="N" package3d_urn="urn:adsk.eagle:package:16429/2" technology="LS"/>
+<part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="IC17" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*173" device="N" package3d_urn="urn:adsk.eagle:package:922/2" technology="LS"/>
 </parts>
 <sheets>
 <sheet>
@@ -22466,6 +22469,9 @@ distributor Buerklin, 17G574</description>
 <wire x1="48.26" y1="-124.46" x2="48.26" y2="-246.38" width="1.27" layer="97"/>
 <wire x1="48.26" y1="-246.38" x2="193.04" y2="-246.38" width="1.27" layer="97"/>
 <wire x1="193.04" y1="-246.38" x2="193.04" y2="-124.46" width="1.27" layer="97"/>
+<wire x1="48.26" y1="-246.38" x2="48.26" y2="-368.3" width="1.27" layer="97"/>
+<wire x1="193.04" y1="-368.3" x2="193.04" y2="-246.38" width="1.27" layer="97"/>
+<wire x1="48.26" y1="-368.3" x2="193.04" y2="-368.3" width="1.27" layer="97"/>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="71.12" y="83.82" smashed="yes" rot="R180">
@@ -22645,6 +22651,21 @@ distributor Buerklin, 17G574</description>
 <attribute name="NAME" x="172.72" y="-358.775" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="172.72" y="-350.52" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="IC16" gate="A" x="116.84" y="-312.42" smashed="yes">
+<attribute name="NAME" x="109.22" y="-296.545" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.22" y="-330.2" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY4" gate="GND" x="96.52" y="-325.12" smashed="yes">
+<attribute name="VALUE" x="94.615" y="-328.295" size="1.778" layer="96"/>
+</instance>
+<instance part="IC9" gate="E" x="124.46" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="121.92" y="172.085" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="121.92" y="180.34" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IC17" gate="A" x="-63.5" y="213.36" smashed="yes">
+<attribute name="NAME" x="-71.12" y="229.235" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-71.12" y="195.58" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22673,6 +22694,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="233.68" y1="-99.06" x2="233.68" y2="-228.6" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-228.6" x2="182.88" y2="-228.6" width="0.1524" layer="91"/>
 <junction x="233.68" y="-99.06"/>
+<pinref part="IC15" gate="D" pin="I1"/>
+<wire x1="233.68" y1="-228.6" x2="233.68" y2="-353.06" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-353.06" x2="182.88" y2="-353.06" width="0.1524" layer="91"/>
+<junction x="233.68" y="-228.6"/>
 </segment>
 </net>
 <net name="A_1" class="0">
@@ -22689,6 +22714,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="228.6" y1="-86.36" x2="228.6" y2="-215.9" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="-215.9" x2="182.88" y2="-215.9" width="0.1524" layer="91"/>
 <junction x="228.6" y="-86.36"/>
+<pinref part="IC15" gate="C" pin="I1"/>
+<wire x1="228.6" y1="-215.9" x2="228.6" y2="-340.36" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="-340.36" x2="182.88" y2="-340.36" width="0.1524" layer="91"/>
+<junction x="228.6" y="-215.9"/>
 </segment>
 </net>
 <net name="A_2" class="0">
@@ -22705,6 +22734,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="223.52" y1="-73.66" x2="223.52" y2="-203.2" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="-203.2" x2="182.88" y2="-203.2" width="0.1524" layer="91"/>
 <junction x="223.52" y="-73.66"/>
+<pinref part="IC15" gate="B" pin="I1"/>
+<wire x1="223.52" y1="-203.2" x2="223.52" y2="-327.66" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-327.66" x2="182.88" y2="-327.66" width="0.1524" layer="91"/>
+<junction x="223.52" y="-203.2"/>
 </segment>
 </net>
 <net name="A_3" class="0">
@@ -22721,6 +22754,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="218.44" y1="-60.96" x2="218.44" y2="-190.5" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="-190.5" x2="182.88" y2="-190.5" width="0.1524" layer="91"/>
 <junction x="218.44" y="-60.96"/>
+<pinref part="IC15" gate="A" pin="I1"/>
+<wire x1="218.44" y1="-190.5" x2="218.44" y2="-314.96" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="-314.96" x2="182.88" y2="-314.96" width="0.1524" layer="91"/>
+<junction x="218.44" y="-190.5"/>
 </segment>
 </net>
 <net name="A_4" class="0">
@@ -22739,6 +22776,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="213.36" y1="-48.26" x2="213.36" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="-177.8" x2="182.88" y2="-177.8" width="0.1524" layer="91"/>
 <junction x="213.36" y="-48.26"/>
+<pinref part="IC14" gate="D" pin="I1"/>
+<wire x1="213.36" y1="-177.8" x2="213.36" y2="-302.26" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="-302.26" x2="182.88" y2="-302.26" width="0.1524" layer="91"/>
+<junction x="213.36" y="-177.8"/>
 </segment>
 </net>
 <net name="A_5" class="0">
@@ -22757,6 +22798,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="208.28" y1="-35.56" x2="208.28" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="-165.1" x2="182.88" y2="-165.1" width="0.1524" layer="91"/>
 <junction x="208.28" y="-35.56"/>
+<pinref part="IC14" gate="C" pin="I1"/>
+<wire x1="208.28" y1="-165.1" x2="208.28" y2="-289.56" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-289.56" x2="182.88" y2="-289.56" width="0.1524" layer="91"/>
+<junction x="208.28" y="-165.1"/>
 </segment>
 </net>
 <net name="A_6" class="0">
@@ -22775,6 +22820,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="203.2" y1="-22.86" x2="203.2" y2="-152.4" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="-152.4" x2="182.88" y2="-152.4" width="0.1524" layer="91"/>
 <junction x="203.2" y="-22.86"/>
+<pinref part="IC14" gate="B" pin="I1"/>
+<wire x1="203.2" y1="-152.4" x2="203.2" y2="-276.86" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-276.86" x2="182.88" y2="-276.86" width="0.1524" layer="91"/>
+<junction x="203.2" y="-152.4"/>
 </segment>
 </net>
 <net name="A_7" class="0">
@@ -22793,6 +22842,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="198.12" y1="-10.16" x2="198.12" y2="-139.7" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="-139.7" x2="182.88" y2="-139.7" width="0.1524" layer="91"/>
 <junction x="198.12" y="-10.16"/>
+<pinref part="IC14" gate="A" pin="I1"/>
+<wire x1="198.12" y1="-139.7" x2="198.12" y2="-264.16" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-264.16" x2="182.88" y2="-264.16" width="0.1524" layer="91"/>
+<junction x="198.12" y="-139.7"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -22932,6 +22985,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="236.22" y1="-104.14" x2="236.22" y2="-233.68" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="-233.68" x2="182.88" y2="-233.68" width="0.1524" layer="91"/>
 <junction x="236.22" y="-104.14"/>
+<pinref part="IC15" gate="D" pin="I0"/>
+<wire x1="236.22" y1="-233.68" x2="236.22" y2="-358.14" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-358.14" x2="182.88" y2="-358.14" width="0.1524" layer="91"/>
+<junction x="236.22" y="-233.68"/>
 </segment>
 </net>
 <net name="B_1" class="0">
@@ -22950,6 +23007,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="231.14" y1="-91.44" x2="231.14" y2="-220.98" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="-220.98" x2="182.88" y2="-220.98" width="0.1524" layer="91"/>
 <junction x="231.14" y="-91.44"/>
+<pinref part="IC15" gate="C" pin="I0"/>
+<wire x1="231.14" y1="-220.98" x2="231.14" y2="-345.44" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-345.44" x2="182.88" y2="-345.44" width="0.1524" layer="91"/>
+<junction x="231.14" y="-220.98"/>
 </segment>
 </net>
 <net name="B_2" class="0">
@@ -22968,6 +23029,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="226.06" y1="-78.74" x2="226.06" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="-208.28" x2="182.88" y2="-208.28" width="0.1524" layer="91"/>
 <junction x="226.06" y="-78.74"/>
+<pinref part="IC15" gate="B" pin="I0"/>
+<wire x1="226.06" y1="-208.28" x2="226.06" y2="-332.74" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="-332.74" x2="182.88" y2="-332.74" width="0.1524" layer="91"/>
+<junction x="226.06" y="-208.28"/>
 </segment>
 </net>
 <net name="B_3" class="0">
@@ -22986,6 +23051,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="220.98" y1="-66.04" x2="220.98" y2="-195.58" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="-195.58" x2="182.88" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="220.98" y="-66.04"/>
+<pinref part="IC15" gate="A" pin="I0"/>
+<wire x1="220.98" y1="-195.58" x2="220.98" y2="-320.04" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-320.04" x2="182.88" y2="-320.04" width="0.1524" layer="91"/>
+<junction x="220.98" y="-195.58"/>
 </segment>
 </net>
 <net name="B_4" class="0">
@@ -23004,6 +23073,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="215.9" y1="-53.34" x2="215.9" y2="-182.88" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="-182.88" x2="182.88" y2="-182.88" width="0.1524" layer="91"/>
 <junction x="215.9" y="-53.34"/>
+<pinref part="IC14" gate="D" pin="I0"/>
+<wire x1="215.9" y1="-182.88" x2="215.9" y2="-307.34" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-307.34" x2="182.88" y2="-307.34" width="0.1524" layer="91"/>
+<junction x="215.9" y="-182.88"/>
 </segment>
 </net>
 <net name="B_5" class="0">
@@ -23022,6 +23095,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="210.82" y1="-40.64" x2="210.82" y2="-170.18" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="-170.18" x2="182.88" y2="-170.18" width="0.1524" layer="91"/>
 <junction x="210.82" y="-40.64"/>
+<pinref part="IC14" gate="C" pin="I0"/>
+<wire x1="210.82" y1="-170.18" x2="210.82" y2="-294.64" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="-294.64" x2="182.88" y2="-294.64" width="0.1524" layer="91"/>
+<junction x="210.82" y="-170.18"/>
 </segment>
 </net>
 <net name="B_6" class="0">
@@ -23040,6 +23117,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="205.74" y1="-27.94" x2="205.74" y2="-157.48" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="-157.48" x2="182.88" y2="-157.48" width="0.1524" layer="91"/>
 <junction x="205.74" y="-27.94"/>
+<pinref part="IC14" gate="B" pin="I0"/>
+<wire x1="205.74" y1="-157.48" x2="205.74" y2="-281.94" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-281.94" x2="182.88" y2="-281.94" width="0.1524" layer="91"/>
+<junction x="205.74" y="-157.48"/>
 </segment>
 </net>
 <net name="B_7" class="0">
@@ -23057,6 +23138,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="200.66" y1="-15.24" x2="200.66" y2="-144.78" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="-144.78" x2="182.88" y2="-144.78" width="0.1524" layer="91"/>
 <junction x="200.66" y="-15.24"/>
+<pinref part="IC14" gate="A" pin="I0"/>
+<wire x1="200.66" y1="-144.78" x2="200.66" y2="-269.24" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="-269.24" x2="182.88" y2="-269.24" width="0.1524" layer="91"/>
+<junction x="200.66" y="-144.78"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -23145,6 +23230,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="104.14" y1="-193.04" x2="-17.78" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-63.5" x2="-17.78" y2="-193.04" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-63.5"/>
+<pinref part="IC16" gate="A" pin="A8"/>
+<wire x1="-17.78" y1="-193.04" x2="-17.78" y2="-317.5" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-317.5" x2="104.14" y2="-317.5" width="0.1524" layer="91"/>
+<junction x="-17.78" y="-193.04"/>
 </segment>
 </net>
 <net name="D1" class="0">
@@ -23161,6 +23250,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="104.14" y1="-190.5" x2="-15.24" y2="-190.5" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="-60.96" x2="-15.24" y2="-190.5" width="0.1524" layer="91"/>
 <junction x="-15.24" y="-60.96"/>
+<pinref part="IC16" gate="A" pin="A7"/>
+<wire x1="-15.24" y1="-190.5" x2="-15.24" y2="-314.96" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-314.96" x2="104.14" y2="-314.96" width="0.1524" layer="91"/>
+<junction x="-15.24" y="-190.5"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -23177,6 +23270,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="104.14" y1="-187.96" x2="-12.7" y2="-187.96" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-58.42" x2="-12.7" y2="-187.96" width="0.1524" layer="91"/>
 <junction x="-12.7" y="-58.42"/>
+<pinref part="IC16" gate="A" pin="A6"/>
+<wire x1="-12.7" y1="-187.96" x2="-12.7" y2="-312.42" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-312.42" x2="104.14" y2="-312.42" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-187.96"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -23193,6 +23290,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="104.14" y1="-185.42" x2="-10.16" y2="-185.42" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-55.88" x2="-10.16" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="-10.16" y="-55.88"/>
+<pinref part="IC16" gate="A" pin="A5"/>
+<wire x1="-10.16" y1="-185.42" x2="-10.16" y2="-309.88" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-309.88" x2="104.14" y2="-309.88" width="0.1524" layer="91"/>
+<junction x="-10.16" y="-185.42"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -23209,6 +23310,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="104.14" y1="-182.88" x2="-7.62" y2="-182.88" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-53.34" x2="-7.62" y2="-182.88" width="0.1524" layer="91"/>
 <junction x="-7.62" y="-53.34"/>
+<pinref part="IC16" gate="A" pin="A4"/>
+<wire x1="-7.62" y1="-182.88" x2="-7.62" y2="-307.34" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-307.34" x2="104.14" y2="-307.34" width="0.1524" layer="91"/>
+<junction x="-7.62" y="-182.88"/>
 </segment>
 </net>
 <net name="D5" class="0">
@@ -23225,6 +23330,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="104.14" y1="-180.34" x2="-5.08" y2="-180.34" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="-50.8" x2="-5.08" y2="-180.34" width="0.1524" layer="91"/>
 <junction x="-5.08" y="-50.8"/>
+<pinref part="IC16" gate="A" pin="A3"/>
+<wire x1="-5.08" y1="-180.34" x2="-5.08" y2="-304.8" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-304.8" x2="104.14" y2="-304.8" width="0.1524" layer="91"/>
+<junction x="-5.08" y="-180.34"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -23241,6 +23350,10 @@ distributor Buerklin, 17G574</description>
 <wire x1="104.14" y1="-177.8" x2="-2.54" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-48.26" x2="-2.54" y2="-177.8" width="0.1524" layer="91"/>
 <junction x="-2.54" y="-48.26"/>
+<pinref part="IC16" gate="A" pin="A2"/>
+<wire x1="-2.54" y1="-177.8" x2="-2.54" y2="-302.26" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-302.26" x2="104.14" y2="-302.26" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-177.8"/>
 </segment>
 </net>
 <net name="D7" class="0">
@@ -23256,6 +23369,10 @@ distributor Buerklin, 17G574</description>
 <pinref part="IC13" gate="A" pin="A1"/>
 <wire x1="104.14" y1="-175.26" x2="0" y2="-175.26" width="0.1524" layer="91"/>
 <wire x1="0" y1="-45.72" x2="0" y2="-175.26" width="0.1524" layer="91"/>
+<pinref part="IC16" gate="A" pin="A1"/>
+<wire x1="0" y1="-175.26" x2="0" y2="-299.72" width="0.1524" layer="91"/>
+<wire x1="0" y1="-299.72" x2="104.14" y2="-299.72" width="0.1524" layer="91"/>
+<junction x="0" y="-175.26"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -23345,6 +23462,11 @@ distributor Buerklin, 17G574</description>
 <pinref part="IC13" gate="A" pin="DIR"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <wire x1="104.14" y1="-198.12" x2="93.98" y2="-198.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
+<pinref part="IC16" gate="A" pin="DIR"/>
+<wire x1="96.52" y1="-322.58" x2="104.14" y2="-322.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADD" class="0">
@@ -23483,6 +23605,94 @@ distributor Buerklin, 17G574</description>
 <pinref part="IC9" gate="D" pin="I"/>
 <wire x1="134.62" y1="162.56" x2="205.74" y2="162.56" width="0.1524" layer="91"/>
 <label x="205.74" y="162.56" size="1.778" layer="95" ratio="31"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="B1"/>
+<wire x1="129.54" y1="-299.72" x2="132.08" y2="-299.72" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-299.72" x2="132.08" y2="-266.7" width="0.1524" layer="91"/>
+<pinref part="IC14" gate="A" pin="O"/>
+<wire x1="132.08" y1="-266.7" x2="167.64" y2="-266.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="B2"/>
+<wire x1="129.54" y1="-302.26" x2="134.62" y2="-302.26" width="0.1524" layer="91"/>
+<pinref part="IC14" gate="B" pin="O"/>
+<wire x1="134.62" y1="-302.26" x2="134.62" y2="-279.4" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-279.4" x2="167.64" y2="-279.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="B3"/>
+<wire x1="129.54" y1="-304.8" x2="137.16" y2="-304.8" width="0.1524" layer="91"/>
+<pinref part="IC14" gate="C" pin="O"/>
+<wire x1="137.16" y1="-304.8" x2="137.16" y2="-292.1" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-292.1" x2="167.64" y2="-292.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="B4"/>
+<wire x1="129.54" y1="-307.34" x2="139.7" y2="-307.34" width="0.1524" layer="91"/>
+<pinref part="IC14" gate="D" pin="O"/>
+<wire x1="139.7" y1="-307.34" x2="139.7" y2="-304.8" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-304.8" x2="167.64" y2="-304.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="B5"/>
+<wire x1="129.54" y1="-309.88" x2="139.7" y2="-309.88" width="0.1524" layer="91"/>
+<pinref part="IC15" gate="A" pin="O"/>
+<wire x1="139.7" y1="-309.88" x2="139.7" y2="-317.5" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-317.5" x2="167.64" y2="-317.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="B6"/>
+<wire x1="129.54" y1="-312.42" x2="137.16" y2="-312.42" width="0.1524" layer="91"/>
+<pinref part="IC15" gate="B" pin="O"/>
+<wire x1="137.16" y1="-312.42" x2="137.16" y2="-330.2" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-330.2" x2="167.64" y2="-330.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="B7"/>
+<wire x1="129.54" y1="-314.96" x2="134.62" y2="-314.96" width="0.1524" layer="91"/>
+<pinref part="IC15" gate="C" pin="O"/>
+<wire x1="134.62" y1="-314.96" x2="134.62" y2="-342.9" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-342.9" x2="167.64" y2="-342.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="B8"/>
+<wire x1="129.54" y1="-317.5" x2="132.08" y2="-317.5" width="0.1524" layer="91"/>
+<pinref part="IC15" gate="D" pin="O"/>
+<wire x1="132.08" y1="-317.5" x2="132.08" y2="-355.6" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-355.6" x2="167.64" y2="-355.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="IC16" gate="A" pin="G"/>
+<wire x1="104.14" y1="-325.12" x2="96.52" y2="-325.12" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-325.12" x2="96.52" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="IC9" gate="E" pin="O"/>
+<wire x1="96.52" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BITXOR" class="0">
+<segment>
+<pinref part="IC9" gate="E" pin="I"/>
+<wire x1="134.62" y1="175.26" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
+<label x="205.74" y="175.26" size="1.778" layer="95" ratio="31"/>
 </segment>
 </net>
 </nets>

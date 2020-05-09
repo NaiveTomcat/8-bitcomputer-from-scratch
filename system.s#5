@@ -22426,6 +22426,36 @@ distributor Buerklin, 17G574</description>
 </module>
 <module name="ALU" prefix="" dx="30.48" dy="20.32">
 <ports>
+<port name="A_0" side="left" coord="7.62" direction="in"/>
+<port name="A_1" side="left" coord="5.08" direction="in"/>
+<port name="A_2" side="left" coord="2.54" direction="in"/>
+<port name="A_3" side="left" coord="0" direction="in"/>
+<port name="A_4" side="left" coord="-2.54" direction="in"/>
+<port name="A_5" side="left" coord="-5.08" direction="in"/>
+<port name="A_6" side="left" coord="-7.62" direction="in"/>
+<port name="A_7" side="left" coord="-10.16" direction="in"/>
+<port name="B_0" side="bottom" coord="-10.16" direction="in"/>
+<port name="B_1" side="bottom" coord="-7.62" direction="in"/>
+<port name="B_2" side="bottom" coord="-5.08" direction="in"/>
+<port name="B_3" side="bottom" coord="-2.54" direction="in"/>
+<port name="B_4" side="bottom" coord="0" direction="in"/>
+<port name="B_5" side="bottom" coord="2.54" direction="in"/>
+<port name="B_6" side="bottom" coord="5.08" direction="in"/>
+<port name="B_7" side="bottom" coord="7.62" direction="in"/>
+<port name="ADD" side="right" coord="-7.62" direction="in"/>
+<port name="SUB" side="right" coord="-5.08" direction="in"/>
+<port name="BITAND" side="right" coord="-2.54" direction="in"/>
+<port name="BITOR" side="right" coord="0" direction="in"/>
+<port name="BITXOR" side="right" coord="2.54" direction="in"/>
+<port name="D0" side="top" coord="-10.16" direction="out"/>
+<port name="D1" side="top" coord="-7.62" direction="out"/>
+<port name="D2" side="top" coord="-5.08" direction="out"/>
+<port name="D3" side="top" coord="-2.54" direction="out"/>
+<port name="D4" side="top" coord="0" direction="out"/>
+<port name="D5" side="top" coord="2.54" direction="out"/>
+<port name="D6" side="top" coord="5.08" direction="out"/>
+<port name="D7" side="top" coord="7.62" direction="out"/>
+<port name="GND" side="right" coord="7.62" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -23801,12 +23831,44 @@ distributor Buerklin, 17G574</description>
 </module>
 <module name="DATA_TO_ADDR" prefix="" dx="60.96" dy="20.32">
 <ports>
+<port name="D0" side="bottom" coord="10.16" direction="in"/>
+<port name="D1" side="bottom" coord="12.7" direction="in"/>
+<port name="D2" side="bottom" coord="15.24" direction="in"/>
+<port name="D3" side="bottom" coord="17.78" direction="in"/>
+<port name="D4" side="bottom" coord="20.32" direction="in"/>
+<port name="D5" side="bottom" coord="22.86" direction="in"/>
+<port name="D6" side="bottom" coord="25.4" direction="in"/>
+<port name="D7" side="bottom" coord="27.94" direction="in"/>
+<port name="&gt;CLK" side="bottom" coord="-25.4" direction="in"/>
+<port name="!HI_IN" side="bottom" coord="-20.32" direction="in"/>
+<port name="!LO_IN" side="bottom" coord="-17.78" direction="in"/>
+<port name="!OUTPUT_ENABLE" side="bottom" coord="-10.16" direction="in"/>
+<port name="VCC" side="bottom" coord="-2.54" direction="pwr"/>
+<port name="GND" side="bottom" coord="0" direction="pwr"/>
+<port name="A0" side="top" coord="-25.4" direction="out"/>
+<port name="A1" side="top" coord="-22.86" direction="out"/>
+<port name="A2" side="top" coord="-20.32" direction="out"/>
+<port name="A3" side="top" coord="-17.78" direction="out"/>
+<port name="A4" side="top" coord="-15.24" direction="out"/>
+<port name="A5" side="top" coord="-12.7" direction="out"/>
+<port name="A6" side="top" coord="-10.16" direction="out"/>
+<port name="A7" side="top" coord="-7.62" direction="out"/>
+<port name="A8" side="top" coord="-5.08" direction="out"/>
+<port name="A9" side="top" coord="-2.54" direction="out"/>
+<port name="A10" side="top" coord="0" direction="out"/>
+<port name="A11" side="top" coord="2.54" direction="out"/>
+<port name="A12" side="top" coord="5.08" direction="out"/>
+<port name="A13" side="top" coord="7.62" direction="out"/>
+<port name="A14" side="top" coord="10.16" direction="out"/>
+<port name="A15" side="top" coord="12.7" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
 <part name="IC1" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*245" device="N" package3d_urn="urn:adsk.eagle:package:16429/2" technology="LS"/>
 <part name="IC2" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*245" device="N" package3d_urn="urn:adsk.eagle:package:16429/2" technology="LS"/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23828,6 +23890,12 @@ distributor Buerklin, 17G574</description>
 <instance part="IC2" gate="A" x="139.7" y="35.56" smashed="yes">
 <attribute name="NAME" x="132.08" y="51.435" size="1.778" layer="95"/>
 <attribute name="VALUE" x="132.08" y="17.78" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY1" gate="GND" x="96.52" y="88.9" smashed="yes">
+<attribute name="VALUE" x="94.615" y="85.725" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY2" gate="G$1" x="119.38" y="101.6" smashed="yes">
+<attribute name="VALUE" x="117.475" y="104.775" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -23959,31 +24027,6 @@ distributor Buerklin, 17G574</description>
 <portref moduleinst="HI_ADDR" port="CLOCK"/>
 <wire x1="66.04" y1="99.06" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
 <label x="-40.64" y="58.42" size="1.778" layer="95" ratio="31"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<portref moduleinst="HI_ADDR" port="VCC"/>
-<wire x1="63.5" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="96.52" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
-<portref moduleinst="HI_ADDR" port="!OUTPUT_ENABLE"/>
-<wire x1="63.5" y1="91.44" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
-<portref moduleinst="LO_ADDR" port="!OUTPUT_ENABLE"/>
-<wire x1="63.5" y1="55.88" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
-<portref moduleinst="LO_ADDR" port="VCC"/>
-<wire x1="63.5" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="60.96" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="A" pin="DIR"/>
-<wire x1="127" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="25.4" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A" pin="DIR"/>
-<wire x1="121.92" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
-<junction x="71.12" y="60.96"/>
-<junction x="121.92" y="60.96"/>
-<wire x1="71.12" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="96.52" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
-<junction x="71.12" y="96.52"/>
 </segment>
 </net>
 <net name="!OUTPUT_ENABLE" class="0">
@@ -24237,6 +24280,50 @@ distributor Buerklin, 17G574</description>
 <pinref part="IC2" gate="A" pin="B8"/>
 <wire x1="172.72" y1="30.48" x2="152.4" y2="30.48" width="0.1524" layer="91"/>
 <label x="175.26" y="45.72" size="1.778" layer="95" ratio="31"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<portref moduleinst="HI_ADDR" port="VCC"/>
+<wire x1="63.5" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="96.52" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
+<portref moduleinst="HI_ADDR" port="!OUTPUT_ENABLE"/>
+<wire x1="63.5" y1="91.44" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<portref moduleinst="LO_ADDR" port="!OUTPUT_ENABLE"/>
+<wire x1="63.5" y1="55.88" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
+<portref moduleinst="LO_ADDR" port="VCC"/>
+<wire x1="63.5" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="60.96" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="A" pin="DIR"/>
+<wire x1="127" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="25.4" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="DIR"/>
+<wire x1="121.92" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
+<junction x="71.12" y="60.96"/>
+<junction x="121.92" y="60.96"/>
+<wire x1="71.12" y1="96.52" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="96.52" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
+<junction x="71.12" y="96.52"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="119.38" y1="99.06" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
+<junction x="119.38" y="96.52"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<portref moduleinst="LO_ADDR" port="GND"/>
+<wire x1="73.66" y1="55.88" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="58.42" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="93.98" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
+<portref moduleinst="HI_ADDR" port="GND"/>
+<wire x1="73.66" y1="93.98" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<wire x1="96.52" y1="91.44" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<junction x="91.44" y="93.98"/>
 </segment>
 </net>
 </nets>
