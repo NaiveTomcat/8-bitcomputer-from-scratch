@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-05-12T11:21:13Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "regA_regB_and_ALU"
+        },
+        "Owner": "Yitong Dang <tomdang@stu.xjtu.edu.cn>",
+        "Size": {
+            "X": 100,
+            "Y": 100
+        }
+    }
+}
