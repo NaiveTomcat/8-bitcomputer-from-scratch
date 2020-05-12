@@ -1,0 +1,8 @@
+Partlist exported from /home/tomdang/EAGLE/projects/8-bit computer from scratch/regC_to_HL.sch at 2020/5/12 下午9:07
+
+Qty Value      Device       Package     Parts                                                                                                                                                          Description                    POPULARITY
+1              PINHD-1X1    1X01        JP6                                                                                                                                                            PIN HEADER                     64        
+5              PINHD-1X2/90 1X02/90     JP1, JP2, JP3, JP4, JP5                                                                                                                                        PIN HEADER                     24        
+10  74LS173N   74LS173N     DIL16       C_REGISTER:IC1, C_REGISTER:IC2, D_REGISTER:IC1, D_REGISTER:IC2, E_REGISTER:IC1, E_REGISTER:IC2, H_REGISTER:IC1, H_REGISTER:IC2, L_REGISTER:IC1, L_REGISTER:IC2 4-bit D type REGISTER, 3-state 0         
+7   74LS245N   74LS245N     DIL20       C_REGISTER:IC3, D_REGISTER:IC3, E_REGISTER:IC3, H_REGISTER:IC3, IC1, IC2, L_REGISTER:IC3                                                                       Octal BUS TRANSCEIVER, 3-state 0         
+1   PORT_BOARD PORT_BOARD   PORT_FOOTPT U$1                                                                                                                                                                                                     

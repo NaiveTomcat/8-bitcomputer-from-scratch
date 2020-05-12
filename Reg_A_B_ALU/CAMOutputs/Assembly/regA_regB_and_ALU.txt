@@ -1,4 +1,4 @@
-Partlist exported from /home/tomdang/EAGLE/projects/8-bit computer from scratch/regA_regB_and_ALU.sch at 2020/5/12 下午7:21
+Partlist exported from /home/tomdang/EAGLE/projects/8-bit computer from scratch/regA_regB_and_ALU.sch at 2020/5/12 下午9:12
 
 Qty Value      Device       Package     Parts                                                                         Description                          POPULARITY SPICEPREFIX
 3              PINHD-1X2/90 1X02/90     JP2, JP3, JP4                                                                 PIN HEADER                           24                    

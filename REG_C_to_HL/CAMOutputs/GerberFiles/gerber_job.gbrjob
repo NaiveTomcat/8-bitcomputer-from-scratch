@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2020-05-12T13:12:31Z",
+        "CreationDate": "2020-05-12T13:07:25Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -13,7 +13,7 @@
         "BoardThickness": 1.57,
         "LayerNumber": 2,
         "Name": {
-            "ProjectId": "regA_regB_and_ALU"
+            "ProjectId": "regC_to_HL"
         },
         "Owner": "Yitong Dang <tomdang@stu.xjtu.edu.cn>",
         "Size": {
