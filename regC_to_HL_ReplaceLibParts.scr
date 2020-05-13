@@ -1,0 +1,15 @@
+# 'EAGLE Version 9.6.1 Copyright (c) 1988-2020 Autodesk, Inc.;
+
+SET UNDO_LOG OFF;
+# Migrate parts to 'C:/Users/12045/Documents/EAGLE/projects/8-bit computer from scratch/regC_to_HL.lbr'
+USE -*;
+USE 'C:/Users/12045/Documents/EAGLE/projects/8-bit computer from scratch/regC_to_HL.lbr';
+#
+# SHEET 1 - MIGRATE PARTS
+#
+EDIT .s1
+REPLACE U$1 PORT_BOARD;
+EDIT .s1
+SET UNDO_LOG ON;
+# Put all libraries back into use
+USE *;

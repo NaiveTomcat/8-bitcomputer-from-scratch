@@ -1,4 +1,4 @@
-Partlist exported from /home/tomdang/EAGLE/projects/8-bit computer from scratch/regA_regB_and_ALU.sch at 2020/5/12 下午9:12
+Partlist exported from C:/Users/12045/Documents/EAGLE/projects/8-bit computer from scratch/regA_regB_and_ALU.sch at 2020-05-13 16:37
 
 Qty Value      Device       Package     Parts                                                                         Description                          POPULARITY SPICEPREFIX
 3              PINHD-1X2/90 1X02/90     JP2, JP3, JP4                                                                 PIN HEADER                           24                    
@@ -6,6 +6,7 @@ Qty Value      Device       Package     Parts                                   
 1   74LS02N    74LS02N      DIL14       ALU2:IC18                                                                     Quad 2-input NOR gate                0                     
 1   74LS04N    74LS04N      DIL14       ALU2:IC9                                                                      Hex INVERTER                         0                     
 3   74LS08N    74LS08N      DIL14       ALU2:IC5, ALU2:IC6, ALU2:IC10                                                 Quad 2-input AND gate                0                     
+1   74LS11N    74LS11N      DIL14       ALU2:IC19                                                                     Triple 3-input AND gate              0                     
 5   74LS173N   74LS173N     DIL16       ALU2:IC17, A_REGISTER1:IC1, A_REGISTER1:IC2, B_REGISTER1:IC1, B_REGISTER1:IC2 4-bit D type REGISTER, 3-state       0                     
 6   74LS245N   74LS245N     DIL20       ALU2:IC7, ALU2:IC8, ALU2:IC13, ALU2:IC16, A_REGISTER1:IC3, B_REGISTER1:IC3    Octal BUS TRANSCEIVER, 3-state       0                     
 2   74LS283N   74LS283N     DIL16       ALU2:IC1, ALU2:IC2                                                            4-bit binary FULL ADDER, fast carry  0                     

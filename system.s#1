@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -22571,6 +22571,157 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="stack_interface">
+<packages>
+<package name="PORT_FOOTPT">
+<wire x1="0" y1="0" x2="100" y2="0" width="0.127" layer="20"/>
+<wire x1="100" y1="0" x2="100" y2="100" width="0.127" layer="20"/>
+<wire x1="100" y1="100" x2="0" y2="100" width="0.127" layer="20"/>
+<wire x1="0" y1="100" x2="0" y2="0" width="0.127" layer="20"/>
+<pad name="A0" x="6.35" y="2.54" drill="0.55" shape="square"/>
+<pad name="A1" x="8.89" y="2.54" drill="0.55" shape="square"/>
+<pad name="A2" x="11.43" y="2.54" drill="0.55" shape="square"/>
+<pad name="A3" x="13.97" y="2.54" drill="0.55" shape="square"/>
+<pad name="A4" x="16.51" y="2.54" drill="0.55" shape="square"/>
+<pad name="A5" x="19.05" y="2.54" drill="0.55" shape="square"/>
+<pad name="A6" x="21.59" y="2.54" drill="0.55" shape="square"/>
+<pad name="A7" x="24.13" y="2.54" drill="0.55" shape="square"/>
+<pad name="A8" x="26.67" y="2.54" drill="0.55" shape="square"/>
+<pad name="A9" x="29.21" y="2.54" drill="0.55" shape="square"/>
+<pad name="A10" x="31.75" y="2.54" drill="0.55" shape="square"/>
+<pad name="A11" x="34.29" y="2.54" drill="0.55" shape="square"/>
+<pad name="A12" x="36.83" y="2.54" drill="0.55" shape="square"/>
+<pad name="A13" x="39.37" y="2.54" drill="0.55" shape="square"/>
+<pad name="A14" x="41.91" y="2.54" drill="0.55" shape="square"/>
+<pad name="A15" x="44.45" y="2.54" drill="0.55" shape="square"/>
+<pad name="D0" x="57.15" y="2.54" drill="0.55" shape="square"/>
+<pad name="D1" x="59.69" y="2.54" drill="0.55" shape="square"/>
+<pad name="D2" x="62.23" y="2.54" drill="0.55" shape="square"/>
+<pad name="D3" x="64.77" y="2.54" drill="0.55" shape="square"/>
+<pad name="D4" x="67.31" y="2.54" drill="0.55" shape="square"/>
+<pad name="D5" x="69.85" y="2.54" drill="0.55" shape="square"/>
+<pad name="D6" x="72.39" y="2.54" drill="0.55" shape="square"/>
+<pad name="D7" x="74.93" y="2.54" drill="0.55" shape="square"/>
+<pad name="CLK" x="85.09" y="2.54" drill="0.55" shape="square"/>
+<pad name="VCC" x="90.17" y="2.54" drill="0.55" shape="square"/>
+<pad name="GND" x="92.71" y="2.54" drill="0.55" shape="square"/>
+<pad name="RST" x="87.63" y="2.54" drill="0.55" shape="square"/>
+<pad name="A16" x="6.35" y="5.08" drill="0.55" shape="square"/>
+<pad name="A17" x="8.89" y="5.08" drill="0.55" shape="square"/>
+<pad name="A18" x="11.43" y="5.08" drill="0.55" shape="square"/>
+<pad name="A19" x="13.97" y="5.08" drill="0.55" shape="square"/>
+<pad name="A20" x="16.51" y="5.08" drill="0.55" shape="square"/>
+<pad name="A21" x="19.05" y="5.08" drill="0.55" shape="square"/>
+<pad name="A22" x="21.59" y="5.08" drill="0.55" shape="square"/>
+<pad name="A23" x="24.13" y="5.08" drill="0.55" shape="square"/>
+<pad name="A24" x="26.67" y="5.08" drill="0.55" shape="square"/>
+<pad name="A25" x="29.21" y="5.08" drill="0.55" shape="square"/>
+<pad name="A26" x="31.75" y="5.08" drill="0.55" shape="square"/>
+<pad name="A27" x="34.29" y="5.08" drill="0.55" shape="square"/>
+<pad name="A28" x="36.83" y="5.08" drill="0.55" shape="square"/>
+<pad name="A29" x="39.37" y="5.08" drill="0.55" shape="square"/>
+<pad name="A30" x="41.91" y="5.08" drill="0.55" shape="square"/>
+<pad name="A31" x="44.45" y="5.08" drill="0.55" shape="square"/>
+<pad name="D8" x="57.15" y="5.08" drill="0.55" shape="square"/>
+<pad name="D9" x="59.69" y="5.08" drill="0.55" shape="square"/>
+<pad name="D10" x="62.23" y="5.08" drill="0.55" shape="square"/>
+<pad name="D11" x="64.77" y="5.08" drill="0.55" shape="square"/>
+<pad name="D12" x="67.31" y="5.08" drill="0.55" shape="square"/>
+<pad name="D13" x="69.85" y="5.08" drill="0.55" shape="square"/>
+<pad name="D14" x="72.39" y="5.08" drill="0.55" shape="square"/>
+<pad name="D15" x="74.93" y="5.08" drill="0.55" shape="square"/>
+<pad name="CLK1" x="85.09" y="5.08" drill="0.55" shape="square"/>
+<pad name="VCC1" x="90.17" y="5.08" drill="0.55" shape="square"/>
+<pad name="GND1" x="92.71" y="5.08" drill="0.55" shape="square"/>
+<pad name="RST1" x="87.63" y="5.08" drill="0.55" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PORT_PIN">
+<wire x1="-10.16" y1="-35.56" x2="10.16" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-35.56" x2="10.16" y2="38.1" width="0.254" layer="94"/>
+<wire x1="10.16" y1="38.1" x2="-10.16" y2="38.1" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="38.1" x2="-10.16" y2="34.036" width="0.254" layer="94"/>
+<pin name="A0" x="15.24" y="33.02" length="middle" rot="R180"/>
+<pin name="A1" x="15.24" y="30.48" length="middle" rot="R180"/>
+<pin name="A2" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="A3" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="A4" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="A5" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="A6" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="A7" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="A8" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="A9" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="A10" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="A11" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="A12" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="A13" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="A14" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="A15" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="D0" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="D1" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="D2" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="D3" x="15.24" y="-20.32" length="middle" rot="R180"/>
+<pin name="D4" x="15.24" y="-22.86" length="middle" rot="R180"/>
+<pin name="D5" x="15.24" y="-25.4" length="middle" rot="R180"/>
+<pin name="D6" x="15.24" y="-27.94" length="middle" rot="R180"/>
+<pin name="D7" x="15.24" y="-30.48" length="middle" rot="R180"/>
+<pin name="CLK" x="-15.24" y="33.02" length="middle"/>
+<pin name="VCC" x="-15.24" y="27.94" length="middle" direction="pwr"/>
+<pin name="GND" x="-15.24" y="22.86" length="middle" direction="pwr"/>
+<wire x1="-10.16" y1="34.036" x2="-10.16" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="32.004" x2="-10.16" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="34.036" x2="-8.636" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-8.636" y1="33.02" x2="-10.16" y2="32.004" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="32.004" x2="-10.16" y2="33.02" width="0.254" layer="94"/>
+<pin name="RST" x="-15.24" y="17.78" length="middle" direction="in"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PORT_BOARD">
+<gates>
+<gate name="G$1" symbol="PORT_PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PORT_FOOTPT">
+<connects>
+<connect gate="G$1" pin="A0" pad="A0 A16"/>
+<connect gate="G$1" pin="A1" pad="A1 A17"/>
+<connect gate="G$1" pin="A10" pad="A10 A26"/>
+<connect gate="G$1" pin="A11" pad="A11 A27"/>
+<connect gate="G$1" pin="A12" pad="A12 A28"/>
+<connect gate="G$1" pin="A13" pad="A13 A29"/>
+<connect gate="G$1" pin="A14" pad="A14 A30"/>
+<connect gate="G$1" pin="A15" pad="A15 A31"/>
+<connect gate="G$1" pin="A2" pad="A2 A18"/>
+<connect gate="G$1" pin="A3" pad="A3 A19"/>
+<connect gate="G$1" pin="A4" pad="A4 A20"/>
+<connect gate="G$1" pin="A5" pad="A5 A21"/>
+<connect gate="G$1" pin="A6" pad="A6 A22"/>
+<connect gate="G$1" pin="A7" pad="A7 A23"/>
+<connect gate="G$1" pin="A8" pad="A8 A24"/>
+<connect gate="G$1" pin="A9" pad="A9 A25"/>
+<connect gate="G$1" pin="CLK" pad="CLK CLK1"/>
+<connect gate="G$1" pin="D0" pad="D0 D8"/>
+<connect gate="G$1" pin="D1" pad="D1 D9"/>
+<connect gate="G$1" pin="D2" pad="D2 D10"/>
+<connect gate="G$1" pin="D3" pad="D3 D11"/>
+<connect gate="G$1" pin="D4" pad="D4 D12"/>
+<connect gate="G$1" pin="D5" pad="D5 D13"/>
+<connect gate="G$1" pin="D6" pad="D6 D14"/>
+<connect gate="G$1" pin="D7" pad="D7 D15"/>
+<connect gate="G$1" pin="GND" pad="GND GND1"/>
+<connect gate="G$1" pin="RST" pad="RST RST1"/>
+<connect gate="G$1" pin="VCC" pad="VCC VCC1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -28608,6 +28759,15 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <part name="IC1" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*245" device="N" package3d_urn="urn:adsk.eagle:package:16429/2" technology="LS"/>
 <part name="IC2" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*245" device="N" package3d_urn="urn:adsk.eagle:package:16429/2" technology="LS"/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
+<part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
+<part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
+<part name="U$1" library="stack_interface" deviceset="PORT_BOARD" device=""/>
+<part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
+<part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="/90" package3d_urn="urn:adsk.eagle:package:22413/2"/>
+<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="/90" package3d_urn="urn:adsk.eagle:package:22437/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -30201,6 +30361,467 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="63.5" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="93.98" x2="27.94" y2="-149.86" width="0.1524" layer="91"/>
 <label x="27.94" y="-149.86" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>&lt;h1&gt;Register A, Register B and ALU assembly&lt;/h1&gt;</description>
+<plain>
+</plain>
+<moduleinsts>
+<moduleinst name="A_REGISTER1" module="DATA_REGISTOR" x="106.68" y="50.8">
+<attribute name="NAME" value="A_REGISTER" x="106.68" y="38.1" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="B_REGISTER1" module="DATA_REGISTOR" x="106.68" y="7.62">
+<attribute name="NAME" value="B_REGISTER" x="106.68" y="-5.08" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="ALU2" module="ALU" x="160.02" y="50.8">
+<attribute name="NAME" x="160.02" y="50.8" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+</moduleinsts>
+<instances>
+<instance part="SUPPLY18" gate="GND" x="121.92" y="63.5" smashed="yes">
+<attribute name="VALUE" x="120.015" y="60.325" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY19" gate="GND" x="121.92" y="20.32" smashed="yes">
+<attribute name="VALUE" x="120.015" y="17.145" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY20" gate="G$1" x="111.76" y="73.66" smashed="yes">
+<attribute name="VALUE" x="109.855" y="76.835" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY21" gate="G$1" x="111.76" y="30.48" smashed="yes">
+<attribute name="VALUE" x="109.855" y="33.655" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="15.24" y="73.66" smashed="yes"/>
+<instance part="SUPPLY22" gate="G$1" x="-12.7" y="106.68" smashed="yes">
+<attribute name="VALUE" x="-14.605" y="109.855" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY23" gate="GND" x="-12.7" y="91.44" smashed="yes">
+<attribute name="VALUE" x="-14.605" y="88.265" size="1.778" layer="96"/>
+</instance>
+<instance part="JP1" gate="A" x="218.44" y="50.8" smashed="yes">
+<attribute name="NAME" x="212.09" y="64.135" size="1.778" layer="95"/>
+<attribute name="VALUE" x="212.09" y="38.1" size="1.778" layer="96"/>
+</instance>
+<instance part="JP2" gate="G$1" x="218.44" y="71.12" smashed="yes">
+<attribute name="NAME" x="212.09" y="76.835" size="1.778" layer="95"/>
+<attribute name="VALUE" x="212.09" y="66.04" size="1.778" layer="96"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="SUPPLY18" gate="GND" pin="GND"/>
+<portref moduleinst="A_REGISTER1" port="GND"/>
+<wire x1="114.3" y1="66.04" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
+<portref moduleinst="B_REGISTER1" port="GND"/>
+<wire x1="114.3" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY23" gate="GND" pin="GND"/>
+<wire x1="0" y1="96.52" x2="-12.7" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="96.52" x2="-12.7" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
+<portref moduleinst="A_REGISTER1" port="VCC"/>
+<wire x1="111.76" y1="71.12" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY21" gate="G$1" pin="VCC"/>
+<portref moduleinst="B_REGISTER1" port="VCC"/>
+<wire x1="111.76" y1="27.94" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY22" gate="G$1" pin="VCC"/>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="-12.7" y1="104.14" x2="-12.7" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="101.6" x2="0" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DATA_7" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="DATA_7"/>
+<wire x1="76.2" y1="43.18" x2="76.2" y2="0" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="43.18" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
+<junction x="76.2" y="43.18"/>
+<portref moduleinst="B_REGISTER1" port="DATA_7"/>
+<wire x1="86.36" y1="0" x2="76.2" y2="0" width="0.1524" layer="91"/>
+<label x="76.2" y="68.58" size="1.778" layer="95" rot="R90"/>
+<portref moduleinst="ALU2" port="D7"/>
+<wire x1="76.2" y1="93.98" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="93.98" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="93.98" x2="167.64" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D7"/>
+<wire x1="76.2" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DATA_6" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="DATA_6"/>
+<wire x1="73.66" y1="2.54" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
+<junction x="73.66" y="45.72"/>
+<portref moduleinst="B_REGISTER1" port="DATA_6"/>
+<wire x1="86.36" y1="2.54" x2="73.66" y2="2.54" width="0.1524" layer="91"/>
+<label x="73.66" y="68.58" size="1.778" layer="95" rot="R90"/>
+<wire x1="73.66" y1="45.72" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
+<portref moduleinst="ALU2" port="D6"/>
+<wire x1="73.66" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="91.44" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D6"/>
+<wire x1="30.48" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DATA_5" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="DATA_5"/>
+<wire x1="71.12" y1="48.26" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
+<junction x="71.12" y="48.26"/>
+<portref moduleinst="B_REGISTER1" port="DATA_5"/>
+<wire x1="86.36" y1="5.08" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
+<label x="71.12" y="68.58" size="1.778" layer="95" rot="R90"/>
+<portref moduleinst="ALU2" port="D5"/>
+<wire x1="71.12" y1="88.9" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="88.9" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D5"/>
+<wire x1="71.12" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DATA_4" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="DATA_4"/>
+<wire x1="68.58" y1="7.62" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<junction x="68.58" y="50.8"/>
+<portref moduleinst="B_REGISTER1" port="DATA_4"/>
+<wire x1="86.36" y1="7.62" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
+<label x="68.58" y="68.58" size="1.778" layer="95" rot="R90"/>
+<wire x1="68.58" y1="50.8" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<portref moduleinst="ALU2" port="D4"/>
+<wire x1="68.58" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="86.36" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D4"/>
+<wire x1="30.48" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DATA_3" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="DATA_3"/>
+<wire x1="66.04" y1="53.34" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
+<junction x="66.04" y="53.34"/>
+<portref moduleinst="B_REGISTER1" port="DATA_3"/>
+<wire x1="86.36" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
+<label x="66.04" y="68.58" size="1.778" layer="95" rot="R90"/>
+<portref moduleinst="ALU2" port="D3"/>
+<wire x1="66.04" y1="83.82" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="83.82" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D3"/>
+<wire x1="66.04" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DATA_2" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="DATA_2"/>
+<wire x1="63.5" y1="12.7" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<junction x="63.5" y="55.88"/>
+<portref moduleinst="B_REGISTER1" port="DATA_2"/>
+<wire x1="86.36" y1="12.7" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
+<label x="63.5" y="68.58" size="1.778" layer="95" rot="R90"/>
+<wire x1="63.5" y1="55.88" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
+<portref moduleinst="ALU2" port="D2"/>
+<wire x1="63.5" y1="81.28" x2="154.94" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="81.28" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D2"/>
+<wire x1="30.48" y1="55.88" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DATA_1" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="DATA_1"/>
+<wire x1="60.96" y1="58.42" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<junction x="60.96" y="58.42"/>
+<portref moduleinst="B_REGISTER1" port="DATA_1"/>
+<wire x1="86.36" y1="15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
+<label x="60.96" y="68.58" size="1.778" layer="95" rot="R90"/>
+<portref moduleinst="ALU2" port="D1"/>
+<wire x1="60.96" y1="78.74" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="78.74" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="78.74" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D1"/>
+<wire x1="60.96" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DATA_0" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="DATA_0"/>
+<wire x1="58.42" y1="17.78" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<junction x="58.42" y="60.96"/>
+<portref moduleinst="B_REGISTER1" port="DATA_0"/>
+<wire x1="86.36" y1="17.78" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
+<label x="58.42" y="68.58" size="1.778" layer="95" rot="R90"/>
+<wire x1="58.42" y1="60.96" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
+<portref moduleinst="ALU2" port="D0"/>
+<wire x1="149.86" y1="66.04" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D0"/>
+<wire x1="30.48" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="UB_0"/>
+<portref moduleinst="ALU2" port="A_0"/>
+<wire x1="127" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="UB_1"/>
+<portref moduleinst="ALU2" port="A_1"/>
+<wire x1="127" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="UB_2"/>
+<portref moduleinst="ALU2" port="A_2"/>
+<wire x1="127" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="UB_3"/>
+<portref moduleinst="ALU2" port="A_3"/>
+<wire x1="127" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="UB_4"/>
+<portref moduleinst="ALU2" port="A_4"/>
+<wire x1="127" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$54" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="UB_5"/>
+<portref moduleinst="ALU2" port="A_5"/>
+<wire x1="127" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="UB_6"/>
+<portref moduleinst="ALU2" port="A_6"/>
+<wire x1="127" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="UB_7"/>
+<portref moduleinst="ALU2" port="A_7"/>
+<wire x1="127" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<portref moduleinst="B_REGISTER1" port="UB_0"/>
+<portref moduleinst="ALU2" port="B_0"/>
+<wire x1="127" y1="15.24" x2="149.86" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="15.24" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<portref moduleinst="B_REGISTER1" port="UB_1"/>
+<portref moduleinst="ALU2" port="B_1"/>
+<wire x1="127" y1="12.7" x2="152.4" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="12.7" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$59" class="0">
+<segment>
+<portref moduleinst="ALU2" port="B_2"/>
+<portref moduleinst="B_REGISTER1" port="UB_2"/>
+<wire x1="154.94" y1="35.56" x2="154.94" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<portref moduleinst="B_REGISTER1" port="UB_3"/>
+<portref moduleinst="ALU2" port="B_3"/>
+<wire x1="127" y1="7.62" x2="157.48" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="7.62" x2="157.48" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<portref moduleinst="ALU2" port="B_4"/>
+<portref moduleinst="B_REGISTER1" port="UB_4"/>
+<wire x1="160.02" y1="35.56" x2="160.02" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="5.08" x2="127" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<portref moduleinst="B_REGISTER1" port="UB_5"/>
+<portref moduleinst="ALU2" port="B_5"/>
+<wire x1="127" y1="2.54" x2="162.56" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="2.54" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<portref moduleinst="ALU2" port="B_6"/>
+<portref moduleinst="B_REGISTER1" port="UB_6"/>
+<wire x1="165.1" y1="35.56" x2="165.1" y2="0" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="0" x2="127" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<portref moduleinst="B_REGISTER1" port="UB_7"/>
+<portref moduleinst="ALU2" port="B_7"/>
+<wire x1="127" y1="-2.54" x2="167.64" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-2.54" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CLOCK1" class="0">
+<segment>
+<wire x1="129.54" y1="68.58" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
+<portref moduleinst="B_REGISTER1" port="CLOCK"/>
+<wire x1="106.68" y1="22.86" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="25.4" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
+<portref moduleinst="A_REGISTER1" port="CLOCK"/>
+<wire x1="106.68" y1="66.04" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="68.58" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="116.84" x2="-5.08" y2="116.84" width="0.1524" layer="91"/>
+<junction x="129.54" y="68.58"/>
+<pinref part="U$1" gate="G$1" pin="CLK"/>
+<wire x1="-5.08" y1="116.84" x2="-5.08" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="106.68" x2="0" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="CLR"/>
+<wire x1="109.22" y1="66.04" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="73.66" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="73.66" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="27.94" x2="-5.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="27.94" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="RST"/>
+<wire x1="-5.08" y1="91.44" x2="0" y2="91.44" width="0.1524" layer="91"/>
+<portref moduleinst="B_REGISTER1" port="CLR"/>
+<wire x1="109.22" y1="22.86" x2="109.22" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="27.94" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
+<junction x="55.88" y="27.94"/>
+</segment>
+</net>
+<net name="N$67" class="0">
+<segment>
+<portref moduleinst="ALU2" port="CARRY_FLAG"/>
+<wire x1="142.24" y1="66.04" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="71.12" x2="208.28" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="208.28" y1="71.12" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="60.96" x2="215.9" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$68" class="0">
+<segment>
+<portref moduleinst="ALU2" port="NEG_FLAG"/>
+<wire x1="144.78" y1="66.04" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="68.58" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="68.58" x2="205.74" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="205.74" y1="58.42" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$69" class="0">
+<segment>
+<portref moduleinst="ALU2" port="ZERO_FLAG"/>
+<wire x1="147.32" y1="66.04" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="73.66" x2="203.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="73.66" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="203.2" y1="55.88" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$70" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<portref moduleinst="ALU2" port="BITXOR"/>
+<wire x1="187.96" y1="53.34" x2="215.9" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$71" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="5"/>
+<portref moduleinst="ALU2" port="BITOR"/>
+<wire x1="187.96" y1="50.8" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$72" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="6"/>
+<portref moduleinst="ALU2" port="BITAND"/>
+<wire x1="187.96" y1="48.26" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$73" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="7"/>
+<portref moduleinst="ALU2" port="SUB"/>
+<wire x1="187.96" y1="45.72" x2="215.9" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="8"/>
+<portref moduleinst="ALU2" port="ADD"/>
+<wire x1="187.96" y1="43.18" x2="215.9" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<portref moduleinst="ALU2" port="HALF_CARRY_FLAG"/>
+<wire x1="170.18" y1="66.04" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="76.2" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$76" class="0">
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="73.66" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="78.74" x2="198.12" y2="33.02" width="0.1524" layer="91"/>
+<portref moduleinst="ALU2" port="!FLAG_SET"/>
+<wire x1="198.12" y1="33.02" x2="172.72" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="33.02" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

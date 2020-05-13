@@ -2747,6 +2747,7 @@ Based on the following sources:
 <port name="CLK" side="bottom" coord="15.24" direction="in"/>
 <port name="ZERO_FLAG" side="top" coord="-12.7" direction="out"/>
 <port name="HALF_CARRY_FLAG" side="top" coord="10.16" direction="out"/>
+<port name="VCC" side="top" coord="15.24" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2776,6 +2777,7 @@ Based on the following sources:
 <part name="IC17" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*173" device="N" package3d_urn="urn:adsk.eagle:package:922/2" technology="LS"/>
 <part name="IC18" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*02" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="LS"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3019,6 +3021,9 @@ Based on the following sources:
 </instance>
 <instance part="SUPPLY5" gate="GND" x="-35.56" y="15.24" smashed="yes">
 <attribute name="VALUE" x="-37.465" y="12.065" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="-68.58" y="83.82" smashed="yes">
+<attribute name="VALUE" x="-70.485" y="86.995" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4223,6 +4228,21 @@ Based on the following sources:
 <label x="-93.98" y="7.62" size="1.778" layer="95" ratio="31"/>
 </segment>
 </net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
+<wire x1="-68.58" y1="81.28" x2="-68.58" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RST" class="0">
+<segment>
+<pinref part="IC17" gate="A" pin="CLR"/>
+<wire x1="-45.72" y1="25.4" x2="-35.56" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="25.4" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="48.26" x2="-71.12" y2="48.26" width="0.1524" layer="91"/>
+<label x="-71.12" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -4238,6 +4258,10 @@ Based on the following sources:
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="/90" package3d_urn="urn:adsk.eagle:package:22413/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="/90" package3d_urn="urn:adsk.eagle:package:22437/2"/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="/90" package3d_urn="urn:adsk.eagle:package:22437/2"/>
+<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="/90" package3d_urn="urn:adsk.eagle:package:22437/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -4282,6 +4306,20 @@ Based on the following sources:
 <attribute name="NAME" x="217.17" y="81.915" size="1.778" layer="95"/>
 <attribute name="VALUE" x="217.17" y="71.12" size="1.778" layer="96"/>
 </instance>
+<instance part="SUPPLY1" gate="G$1" x="180.34" y="73.66" smashed="yes">
+<attribute name="VALUE" x="178.435" y="76.835" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY2" gate="GND" x="193.04" y="60.96" smashed="yes">
+<attribute name="VALUE" x="191.135" y="57.785" size="1.778" layer="96"/>
+</instance>
+<instance part="JP3" gate="G$1" x="223.52" y="35.56" smashed="yes">
+<attribute name="NAME" x="217.17" y="41.275" size="1.778" layer="95"/>
+<attribute name="VALUE" x="217.17" y="30.48" size="1.778" layer="96"/>
+</instance>
+<instance part="JP4" gate="G$1" x="223.52" y="22.86" smashed="yes">
+<attribute name="NAME" x="217.17" y="28.575" size="1.778" layer="95"/>
+<attribute name="VALUE" x="217.17" y="17.78" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4303,6 +4341,10 @@ Based on the following sources:
 <wire x1="5.08" y1="101.6" x2="-7.62" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="101.6" x2="-7.62" y2="99.06" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<portref moduleinst="ALU2" port="GND"/>
+<pinref part="SUPPLY2" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4320,6 +4362,10 @@ Based on the following sources:
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="-7.62" y1="109.22" x2="-7.62" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="106.68" x2="5.08" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="ALU2" port="VCC"/>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="DATA_7" class="0">
@@ -4800,6 +4846,54 @@ Based on the following sources:
 <segment>
 <pinref part="U$1" gate="G$1" pin="A0"/>
 <wire x1="43.18" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="!AI" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="!INPUT_ENABLE"/>
+<wire x1="106.68" y1="71.12" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<label x="106.68" y="71.12" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="38.1" x2="220.98" y2="38.1" width="0.1524" layer="91"/>
+<label x="205.74" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!AO" class="0">
+<segment>
+<portref moduleinst="A_REGISTER1" port="!OUTPUT_ENABLE"/>
+<wire x1="109.22" y1="71.12" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
+<label x="109.22" y="71.12" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="35.56" x2="220.98" y2="35.56" width="0.1524" layer="91"/>
+<label x="205.74" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!BI" class="0">
+<segment>
+<portref moduleinst="B_REGISTER1" port="!INPUT_ENABLE"/>
+<wire x1="106.68" y1="30.48" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<label x="106.68" y="27.94" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="25.4" x2="220.98" y2="25.4" width="0.1524" layer="91"/>
+<label x="205.74" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!BO" class="0">
+<segment>
+<portref moduleinst="B_REGISTER1" port="!OUTPUT_ENABLE"/>
+<wire x1="109.22" y1="30.48" x2="109.22" y2="27.94" width="0.1524" layer="91"/>
+<label x="109.22" y="27.94" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="22.86" x2="220.98" y2="22.86" width="0.1524" layer="91"/>
+<label x="205.74" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -731,6 +731,16 @@ Based on the following sources:
 <pin name="I0" x="-7.62" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="I1" x="-7.62" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 </symbol>
+<symbol name="7411" urn="urn:adsk.eagle:symbol:1813/1" library_version="5">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
+<text x="2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I0" x="-7.62" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-7.62" y="0" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="O" x="7.62" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="I2" x="-7.62" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="74*04" urn="urn:adsk.eagle:component:2139/4" prefix="IC" library_version="5">
@@ -1875,6 +1885,158 @@ Based on the following sources:
 </device>
 </devices>
 </deviceset>
+<deviceset name="74*11" urn="urn:adsk.eagle:component:2203/4" prefix="IC" library_version="5">
+<description>Triple 3-input &lt;b&gt;AND&lt;/b&gt; gate</description>
+<gates>
+<gate name="A" symbol="7411" x="15.24" y="5.08" swaplevel="1"/>
+<gate name="B" symbol="7411" x="15.24" y="-7.62" swaplevel="1"/>
+<gate name="C" symbol="7411" x="40.64" y="5.08" swaplevel="1"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL14">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="I2" pad="13"/>
+<connect gate="A" pin="O" pad="12"/>
+<connect gate="B" pin="I0" pad="3"/>
+<connect gate="B" pin="I1" pad="4"/>
+<connect gate="B" pin="I2" pad="5"/>
+<connect gate="B" pin="O" pad="6"/>
+<connect gate="C" pin="I0" pad="9"/>
+<connect gate="C" pin="I1" pad="10"/>
+<connect gate="C" pin="I2" pad="11"/>
+<connect gate="C" pin="O" pad="8"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16407/2"/>
+</package3dinstances>
+<technologies>
+<technology name="AC">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="ACT">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="ALS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="AS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="HC">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
+<technology name="HCT">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="LS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="S">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="I2" pad="13"/>
+<connect gate="A" pin="O" pad="12"/>
+<connect gate="B" pin="I0" pad="3"/>
+<connect gate="B" pin="I1" pad="4"/>
+<connect gate="B" pin="I2" pad="5"/>
+<connect gate="B" pin="O" pad="6"/>
+<connect gate="C" pin="I0" pad="9"/>
+<connect gate="C" pin="I1" pad="10"/>
+<connect gate="C" pin="I2" pad="11"/>
+<connect gate="C" pin="O" pad="8"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:1010/2"/>
+</package3dinstances>
+<technologies>
+<technology name="AC">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="ACT">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="ALS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="AS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="HC">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="HCT">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="LS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="S">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="FK" package="LCC20">
+<connects>
+<connect gate="A" pin="I0" pad="2"/>
+<connect gate="A" pin="I1" pad="3"/>
+<connect gate="A" pin="I2" pad="19"/>
+<connect gate="A" pin="O" pad="18"/>
+<connect gate="B" pin="I0" pad="4"/>
+<connect gate="B" pin="I1" pad="6"/>
+<connect gate="B" pin="I2" pad="8"/>
+<connect gate="B" pin="O" pad="9"/>
+<connect gate="C" pin="I0" pad="13"/>
+<connect gate="C" pin="I1" pad="14"/>
+<connect gate="C" pin="I2" pad="16"/>
+<connect gate="C" pin="O" pad="12"/>
+<connect gate="P" pin="GND" pad="10"/>
+<connect gate="P" pin="VCC" pad="20"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2012/1"/>
+</package3dinstances>
+<technologies>
+<technology name="AC">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="ACT">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="ALS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="AS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="HC">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="HCT">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="LS">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="S">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -2778,6 +2940,7 @@ Based on the following sources:
 <part name="IC18" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*02" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="LS"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
+<part name="IC19" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*11" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="LS"/>
 </parts>
 <sheets>
 <sheet>
@@ -3024,6 +3187,14 @@ Based on the following sources:
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="-68.58" y="83.82" smashed="yes">
 <attribute name="VALUE" x="-70.485" y="86.995" size="1.778" layer="96"/>
+</instance>
+<instance part="IC19" gate="A" x="81.28" y="160.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="78.74" y="156.845" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="78.74" y="165.1" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IC19" gate="B" x="58.42" y="147.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="55.88" y="144.145" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="55.88" y="152.4" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -3906,6 +4077,10 @@ Based on the following sources:
 <pinref part="IC10" gate="A" pin="I0"/>
 <wire x1="114.3" y1="124.46" x2="114.3" y2="127" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="127" x2="109.22" y2="127" width="0.1524" layer="91"/>
+<pinref part="IC19" gate="B" pin="I0"/>
+<wire x1="114.3" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="124.46" x2="66.04" y2="144.78" width="0.1524" layer="91"/>
+<junction x="114.3" y="124.46"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -3914,6 +4089,11 @@ Based on the following sources:
 <pinref part="IC10" gate="A" pin="I1"/>
 <wire x1="114.3" y1="137.16" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="IC19" gate="B" pin="I1"/>
+<wire x1="66.04" y1="147.32" x2="88.9" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="147.32" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="137.16" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
+<junction x="114.3" y="137.16"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -3932,6 +4112,10 @@ Based on the following sources:
 <wire x1="101.6" y1="149.86" x2="101.6" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="IC8" gate="A" pin="G"/>
 <wire x1="101.6" y1="-71.12" x2="104.14" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="IC19" gate="A" pin="I0"/>
+<wire x1="101.6" y1="149.86" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="157.48" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
+<junction x="101.6" y="149.86"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -4001,9 +4185,13 @@ Based on the following sources:
 <segment>
 <pinref part="IC13" gate="A" pin="G"/>
 <wire x1="104.14" y1="-200.66" x2="99.06" y2="-200.66" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-200.66" x2="99.06" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-200.66" x2="99.06" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="IC9" gate="D" pin="O"/>
+<wire x1="99.06" y1="160.02" x2="99.06" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="162.56" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="IC19" gate="A" pin="I1"/>
+<wire x1="99.06" y1="160.02" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
+<junction x="99.06" y="160.02"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -4098,9 +4286,13 @@ Based on the following sources:
 <segment>
 <pinref part="IC16" gate="A" pin="G"/>
 <wire x1="104.14" y1="-325.12" x2="96.52" y2="-325.12" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-325.12" x2="96.52" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-325.12" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="IC9" gate="E" pin="O"/>
+<wire x1="96.52" y1="162.56" x2="96.52" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="IC19" gate="A" pin="I2"/>
+<wire x1="96.52" y1="162.56" x2="88.9" y2="162.56" width="0.1524" layer="91"/>
+<junction x="96.52" y="162.56"/>
 </segment>
 </net>
 <net name="BITXOR" class="0">
@@ -4219,6 +4411,10 @@ Based on the following sources:
 <wire x1="-43.18" y1="35.56" x2="-71.12" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-43.18" y="22.86"/>
 <label x="-71.12" y="35.56" size="1.778" layer="95" ratio="31"/>
+<pinref part="IC19" gate="B" pin="O"/>
+<wire x1="-43.18" y1="35.56" x2="-43.18" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="147.32" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
+<junction x="-43.18" y="35.56"/>
 </segment>
 </net>
 <net name="HALF_CARRY_FLAG" class="0">
@@ -4241,6 +4437,14 @@ Based on the following sources:
 <wire x1="-35.56" y1="25.4" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="48.26" x2="-71.12" y2="48.26" width="0.1524" layer="91"/>
 <label x="-71.12" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="IC19" gate="A" pin="O"/>
+<pinref part="IC19" gate="B" pin="I2"/>
+<wire x1="73.66" y1="160.02" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="149.86" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
