@@ -30363,6 +30363,136 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <label x="27.94" y="-149.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
+<net name="N$66" class="0">
+<segment>
+<portref moduleinst="RAM1" port="!WE"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-7.62" x2="25.4" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-7.62" x2="25.4" y2="-149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$77" class="0">
+<segment>
+<wire x1="22.86" y1="-149.86" x2="22.86" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="91"/>
+<portref moduleinst="RAM1" port="!OE"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$78" class="0">
+<segment>
+<portref moduleinst="ROM1" port="!OE"/>
+<wire x1="-66.04" y1="-35.56" x2="-66.04" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="-38.1" x2="20.32" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-38.1" x2="20.32" y2="-149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$79" class="0">
+<segment>
+<portref moduleinst="IO_PANEL1" port="EN"/>
+<wire x1="-129.54" y1="-66.04" x2="-129.54" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-86.36" x2="17.78" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-86.36" x2="17.78" y2="-149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$80" class="0">
+<segment>
+<portref moduleinst="IO_PANEL1" port="!W!/R"/>
+<wire x1="-132.08" y1="-66.04" x2="-132.08" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="-88.9" x2="15.24" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-88.9" x2="15.24" y2="-149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$81" class="0">
+<segment>
+<portref moduleinst="IO_PANEL1" port="READY"/>
+<wire x1="-121.92" y1="-66.04" x2="-121.92" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="-165.1" x2="-15.24" y2="-165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$82" class="0">
+<segment>
+<portref moduleinst="MEMORY_ADDRESS_REGISTOR1" port="MAR_IN"/>
+<wire x1="20.32" y1="121.92" x2="22.86" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="121.92" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-5.08" x2="17.78" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-83.82" x2="12.7" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-149.86" x2="12.7" y2="-83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$83" class="0">
+<segment>
+<wire x1="40.64" y1="-149.86" x2="40.64" y2="-142.24" width="0.1524" layer="91"/>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="!INPUT_ENABLE"/>
+<wire x1="40.64" y1="-142.24" x2="68.58" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-142.24" x2="68.58" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$84" class="0">
+<segment>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="O0"/>
+<wire x1="45.72" y1="-137.16" x2="45.72" y2="-149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$85" class="0">
+<segment>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="O1"/>
+<wire x1="48.26" y1="-149.86" x2="48.26" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$86" class="0">
+<segment>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="O2"/>
+<wire x1="50.8" y1="-149.86" x2="50.8" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$87" class="0">
+<segment>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="O3"/>
+<wire x1="53.34" y1="-149.86" x2="53.34" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$88" class="0">
+<segment>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="O4"/>
+<wire x1="55.88" y1="-149.86" x2="55.88" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$89" class="0">
+<segment>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="O5"/>
+<wire x1="58.42" y1="-149.86" x2="58.42" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$90" class="0">
+<segment>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="O6"/>
+<wire x1="60.96" y1="-149.86" x2="60.96" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$91" class="0">
+<segment>
+<portref moduleinst="INSTRUCTION_REGISTER1" port="O7"/>
+<wire x1="63.5" y1="-149.86" x2="63.5" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$92" class="0">
+<segment>
+<wire x1="60.96" y1="-185.42" x2="60.96" y2="-187.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-187.96" x2="137.16" y2="-187.96" width="0.1524" layer="91"/>
+<portref moduleinst="L_REGISTER" port="!OUTPUT_ENABLE"/>
+<wire x1="137.16" y1="-187.96" x2="137.16" y2="-193.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$93" class="0">
+<segment>
+<portref moduleinst="L_REGISTER" port="!INPUT_ENABLE"/>
+<wire x1="134.62" y1="-193.04" x2="134.62" y2="-190.5" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-190.5" x2="58.42" y2="-190.5" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-190.5" x2="58.42" y2="-185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>

@@ -23204,23 +23204,6 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="IC3" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*245" device="N" package3d_urn="urn:adsk.eagle:package:16429/2" technology="LS"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
-<part name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
-<part name="LED3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
-<part name="LED4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
-<part name="LED5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
-<part name="LED6" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
-<part name="LED7" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
-<part name="LED8" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="220"/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="220"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="220"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="220"/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="220"/>
-<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="220"/>
-<part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="220"/>
-<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="220"/>
-<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23244,73 +23227,6 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="30.48" y="63.5" smashed="yes">
 <attribute name="VALUE" x="28.575" y="66.675" size="1.778" layer="96"/>
-</instance>
-<instance part="LED1" gate="G$1" x="60.96" y="0" smashed="yes">
-<attribute name="NAME" x="64.516" y="-4.572" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="66.675" y="-4.572" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LED2" gate="G$1" x="53.34" y="0" smashed="yes">
-<attribute name="NAME" x="56.896" y="-4.572" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="59.055" y="-4.572" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LED3" gate="G$1" x="45.72" y="0" smashed="yes">
-<attribute name="NAME" x="49.276" y="-4.572" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="51.435" y="-4.572" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LED4" gate="G$1" x="38.1" y="0" smashed="yes">
-<attribute name="NAME" x="41.656" y="-4.572" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="43.815" y="-4.572" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LED5" gate="G$1" x="30.48" y="0" smashed="yes">
-<attribute name="NAME" x="34.036" y="-4.572" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="36.195" y="-4.572" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LED6" gate="G$1" x="22.86" y="0" smashed="yes">
-<attribute name="NAME" x="26.416" y="-4.572" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="28.575" y="-4.572" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LED7" gate="G$1" x="15.24" y="0" smashed="yes">
-<attribute name="NAME" x="18.796" y="-4.572" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="20.955" y="-4.572" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LED8" gate="G$1" x="7.62" y="0" smashed="yes">
-<attribute name="NAME" x="11.176" y="-4.572" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="13.335" y="-4.572" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R1" gate="G$1" x="60.96" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="59.4614" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="64.262" y="-21.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R2" gate="G$1" x="53.34" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="51.8414" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="56.642" y="-21.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R3" gate="G$1" x="45.72" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.2214" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="49.022" y="-21.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R4" gate="G$1" x="38.1" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.6014" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="41.402" y="-21.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R5" gate="G$1" x="30.48" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.9814" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="33.782" y="-21.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R6" gate="G$1" x="22.86" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="21.3614" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="26.162" y="-21.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R7" gate="G$1" x="15.24" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.7414" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="18.542" y="-21.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R8" gate="G$1" x="7.62" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.1214" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="10.922" y="-21.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY3" gate="GND" x="35.56" y="-35.56" smashed="yes">
-<attribute name="VALUE" x="33.655" y="-38.735" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -23444,41 +23360,6 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <wire x1="129.54" y1="76.2" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="-22.86" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-30.48" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="15.24" y1="-30.48" x2="22.86" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-30.48" x2="30.48" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-30.48" x2="35.56" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-30.48" x2="35.56" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="-22.86" x2="60.96" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-30.48" x2="53.34" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="35.56" y="-30.48"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="-30.48" x2="45.72" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-30.48" x2="38.1" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-30.48" x2="35.56" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-22.86" x2="53.34" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="53.34" y="-30.48"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="-22.86" x2="45.72" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="45.72" y="-30.48"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="-22.86" x2="38.1" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="38.1" y="-30.48"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="-22.86" x2="30.48" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="30.48" y="-30.48"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="-22.86" x2="22.86" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="22.86" y="-30.48"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="-22.86" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="15.24" y="-30.48"/>
-</segment>
 </net>
 <net name="CLR" class="0">
 <segment>
@@ -23522,8 +23403,6 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <pinref part="IC3" gate="A" pin="A8"/>
 <wire x1="17.78" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="45.72" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED8" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="2.54" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="25.4" x2="17.78" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="25.4" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
 <junction x="17.78" y="45.72"/>
@@ -23537,12 +23416,8 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <pinref part="IC2" gate="A" pin="Q2"/>
 <wire x1="109.22" y1="48.26" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="A7"/>
-<wire x1="109.22" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="43.18" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED7" gate="G$1" pin="A"/>
-<wire x1="15.24" y1="2.54" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
-<junction x="15.24" y="43.18"/>
 <wire x1="129.54" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 <junction x="109.22" y="43.18"/>
 <label x="129.54" y="43.18" size="1.778" layer="95"/>
@@ -23556,8 +23431,6 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="106.68" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="40.64" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
-<wire x1="22.86" y1="2.54" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="20.32" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="40.64"/>
@@ -23574,8 +23447,6 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="104.14" y1="38.1" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="38.1" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
-<wire x1="30.48" y1="2.54" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="20.32" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
 <junction x="33.02" y="38.1"/>
@@ -23589,12 +23460,8 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <pinref part="IC1" gate="A" pin="Q1"/>
 <wire x1="71.12" y1="48.26" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="A4"/>
-<wire x1="71.12" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="35.56" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="38.1" y1="2.54" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
-<junction x="38.1" y="35.56"/>
 <wire x1="129.54" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
 <junction x="71.12" y="35.56"/>
 <label x="129.54" y="35.56" size="1.778" layer="95"/>
@@ -23605,12 +23472,8 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <pinref part="IC1" gate="A" pin="Q2"/>
 <wire x1="68.58" y1="48.26" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="A3"/>
-<wire x1="68.58" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="33.02" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="45.72" y1="2.54" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
-<junction x="45.72" y="33.02"/>
 <wire x1="129.54" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
 <junction x="68.58" y="33.02"/>
 <label x="129.54" y="33.02" size="1.778" layer="95"/>
@@ -23621,12 +23484,8 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <pinref part="IC1" gate="A" pin="Q3"/>
 <wire x1="66.04" y1="48.26" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="A2"/>
-<wire x1="66.04" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="30.48" x2="0" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="30.48" x2="0" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="0" y1="30.48" x2="0" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="2.54" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<junction x="53.34" y="30.48"/>
 <wire x1="66.04" y1="30.48" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
 <junction x="66.04" y="30.48"/>
 <label x="129.54" y="30.48" size="1.778" layer="95"/>
@@ -23637,12 +23496,8 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <pinref part="IC1" gate="A" pin="Q4"/>
 <wire x1="63.5" y1="48.26" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="A1"/>
-<wire x1="63.5" y1="27.94" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="27.94" x2="-2.54" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="27.94" x2="-2.54" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="27.94" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="60.96" y1="2.54" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
-<junction x="60.96" y="27.94"/>
 <wire x1="63.5" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
 <junction x="63.5" y="27.94"/>
 <label x="129.54" y="27.94" size="1.778" layer="95"/>
@@ -23663,62 +23518,6 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="22.86" y1="48.26" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="22.86" x2="129.54" y2="22.86" width="0.1524" layer="91"/>
 <label x="129.54" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="-5.08" x2="60.96" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="-5.08" x2="53.34" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="-5.08" x2="45.72" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="-5.08" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="LED5" gate="G$1" pin="C"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="-5.08" x2="30.48" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="LED6" gate="G$1" pin="C"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="-5.08" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="LED7" gate="G$1" pin="C"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="LED8" gate="G$1" pin="C"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

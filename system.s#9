@@ -26743,14 +26743,14 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <port name="A_15" side="top" coord="10.16" direction="in"/>
 <port name="!OE" side="bottom" coord="15.24" direction="in"/>
 <port name="!WE" side="bottom" coord="17.78" direction="in"/>
-<port name="D_0" side="right" coord="7.62" direction="out"/>
-<port name="D_1" side="right" coord="5.08" direction="out"/>
-<port name="D_2" side="right" coord="2.54" direction="out"/>
-<port name="D_3" side="right" coord="0" direction="out"/>
-<port name="D_4" side="right" coord="-2.54" direction="out"/>
-<port name="D_5" side="right" coord="-5.08" direction="out"/>
-<port name="D_6" side="right" coord="-7.62" direction="out"/>
-<port name="D_7" side="right" coord="-10.16" direction="out"/>
+<port name="D_0" side="right" coord="7.62" direction="io"/>
+<port name="D_1" side="right" coord="5.08" direction="io"/>
+<port name="D_2" side="right" coord="2.54" direction="io"/>
+<port name="D_3" side="right" coord="0" direction="io"/>
+<port name="D_4" side="right" coord="-2.54" direction="io"/>
+<port name="D_5" side="right" coord="-5.08" direction="io"/>
+<port name="D_6" side="right" coord="-7.62" direction="io"/>
+<port name="D_7" side="right" coord="-10.16" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -27349,6 +27349,33 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 </module>
 <module name="IO_PANEL" prefix="" dx="60.96" dy="20.32">
 <ports>
+<port name="ADDR0" side="top" coord="-27.94" direction="in"/>
+<port name="ADDR1" side="top" coord="-25.4" direction="in"/>
+<port name="ADDR2" side="top" coord="-22.86" direction="in"/>
+<port name="ADDR3" side="top" coord="-20.32" direction="in"/>
+<port name="ADDR4" side="top" coord="-17.78" direction="in"/>
+<port name="ADDR5" side="top" coord="-15.24" direction="in"/>
+<port name="ADDR6" side="top" coord="-12.7" direction="in"/>
+<port name="ADDR7" side="top" coord="-10.16" direction="in"/>
+<port name="ADDR8" side="top" coord="-7.62" direction="in"/>
+<port name="ADDR9" side="top" coord="-5.08" direction="in"/>
+<port name="ADDR10" side="top" coord="-2.54" direction="in"/>
+<port name="ADDR11" side="top" coord="0" direction="in"/>
+<port name="ADDR12" side="top" coord="2.54" direction="in"/>
+<port name="ADDR13" side="top" coord="5.08" direction="in"/>
+<port name="ADDR15" side="top" coord="10.16" direction="in"/>
+<port name="ADDR14" side="top" coord="7.62" direction="in"/>
+<port name="!W!/R" side="bottom" coord="12.7" direction="in"/>
+<port name="EN" side="bottom" coord="15.24" direction="in"/>
+<port name="D0" side="right" coord="7.62" direction="io"/>
+<port name="D1" side="right" coord="5.08" direction="io"/>
+<port name="D2" side="right" coord="2.54" direction="io"/>
+<port name="D3" side="right" coord="0" direction="io"/>
+<port name="D4" side="right" coord="-2.54" direction="io"/>
+<port name="D5" side="right" coord="-5.08" direction="io"/>
+<port name="D6" side="right" coord="-7.62" direction="io"/>
+<port name="D7" side="right" coord="-10.16" direction="io"/>
+<port name="READY" side="bottom" coord="22.86" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -27582,12 +27609,19 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <variantdefs>
 </variantdefs>
 <parts>
+<part name="RST" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="SWITCH_PUSHBUTTON" device="SOFTTOUCHSMD_SJ" package3d_urn="urn:adsk.eagle:package:6240956/1">
+<attribute name="SPICEPREFIX" value="B"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="RST" gate="G$1" x="48.26" y="50.8" smashed="yes">
+<attribute name="NAME" x="45.72" y="54.356" size="1.27" layer="95"/>
+<attribute name="VALUE" x="45.72" y="48.514" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28116,7 +28150,6 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <port name="A_14" side="top" coord="7.62" direction="in"/>
 <port name="A_15" side="top" coord="10.16" direction="in"/>
 <port name="!OE" side="bottom" coord="12.7" direction="in"/>
-<port name="!WE" side="bottom" coord="15.24" direction="in"/>
 <port name="D_0" side="right" coord="7.62" direction="out"/>
 <port name="D_1" side="right" coord="5.08" direction="out"/>
 <port name="D_2" side="right" coord="2.54" direction="out"/>
@@ -28830,13 +28863,17 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <junction x="109.22" y="96.52"/>
 <portref moduleinst="INSTRUCTION_REGISTER1" port="I7"/>
 <wire x1="78.74" y1="-129.54" x2="109.22" y2="-129.54" width="0.1524" layer="91"/>
-<portref moduleinst="RAM1" port="D_7"/>
 <wire x1="20.32" y1="0" x2="76.2" y2="0" width="0.1524" layer="91"/>
 <portref moduleinst="ROM1" port="D_7"/>
 <wire x1="76.2" y1="0" x2="109.22" y2="0" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-30.48" x2="76.2" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-30.48" x2="-22.86" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-30.48" x2="76.2" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-30.48" x2="76.2" y2="0" width="0.1524" layer="91"/>
 <junction x="76.2" y="0"/>
+<portref moduleinst="IO_PANEL1" port="D7"/>
+<wire x1="-109.22" y1="-60.96" x2="-22.86" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-60.96" x2="-22.86" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="-22.86" y="-30.48"/>
 </segment>
 </net>
 <net name="DATA_6" class="0">
@@ -28877,13 +28914,17 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <junction x="106.68" y="93.98"/>
 <portref moduleinst="INSTRUCTION_REGISTER1" port="I6"/>
 <wire x1="106.68" y1="-127" x2="78.74" y2="-127" width="0.1524" layer="91"/>
-<portref moduleinst="RAM1" port="D_6"/>
 <wire x1="106.68" y1="2.54" x2="73.66" y2="2.54" width="0.1524" layer="91"/>
 <portref moduleinst="ROM1" port="D_6"/>
 <wire x1="73.66" y1="2.54" x2="20.32" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-27.94" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-27.94" x2="-25.4" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-27.94" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-27.94" x2="73.66" y2="2.54" width="0.1524" layer="91"/>
 <junction x="73.66" y="2.54"/>
+<portref moduleinst="IO_PANEL1" port="D6"/>
+<wire x1="-25.4" y1="-27.94" x2="-25.4" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-58.42" x2="-109.22" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="-25.4" y="-27.94"/>
 </segment>
 </net>
 <net name="DATA_5" class="0">
@@ -28924,13 +28965,17 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <junction x="104.14" y="88.9"/>
 <portref moduleinst="INSTRUCTION_REGISTER1" port="I5"/>
 <wire x1="104.14" y1="-124.46" x2="78.74" y2="-124.46" width="0.1524" layer="91"/>
-<portref moduleinst="RAM1" port="D_5"/>
 <wire x1="20.32" y1="5.08" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
 <portref moduleinst="ROM1" port="D_5"/>
 <wire x1="71.12" y1="5.08" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-25.4" x2="71.12" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-25.4" x2="-27.94" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-25.4" x2="71.12" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-25.4" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
 <junction x="71.12" y="5.08"/>
+<portref moduleinst="IO_PANEL1" port="D5"/>
+<wire x1="-109.22" y1="-55.88" x2="-27.94" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-55.88" x2="-27.94" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-27.94" y="-25.4"/>
 </segment>
 </net>
 <net name="DATA_4" class="0">
@@ -28971,13 +29016,17 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <junction x="101.6" y="86.36"/>
 <portref moduleinst="INSTRUCTION_REGISTER1" port="I4"/>
 <wire x1="101.6" y1="-121.92" x2="78.74" y2="-121.92" width="0.1524" layer="91"/>
-<portref moduleinst="RAM1" port="D_4"/>
 <wire x1="101.6" y1="7.62" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
 <portref moduleinst="ROM1" port="D_4"/>
 <wire x1="68.58" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-22.86" x2="68.58" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-22.86" x2="-30.48" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-22.86" x2="68.58" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-22.86" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
 <junction x="68.58" y="7.62"/>
+<portref moduleinst="IO_PANEL1" port="D4"/>
+<wire x1="-30.48" y1="-22.86" x2="-30.48" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-53.34" x2="-109.22" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-22.86"/>
 </segment>
 </net>
 <net name="DATA_3" class="0">
@@ -29018,13 +29067,17 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <junction x="99.06" y="83.82"/>
 <portref moduleinst="INSTRUCTION_REGISTER1" port="I3"/>
 <wire x1="99.06" y1="-119.38" x2="78.74" y2="-119.38" width="0.1524" layer="91"/>
-<portref moduleinst="RAM1" port="D_3"/>
 <wire x1="20.32" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 <portref moduleinst="ROM1" port="D_3"/>
 <wire x1="66.04" y1="10.16" x2="99.06" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-20.32" x2="66.04" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-20.32" x2="-33.02" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-20.32" x2="66.04" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-20.32" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 <junction x="66.04" y="10.16"/>
+<portref moduleinst="IO_PANEL1" port="D3"/>
+<wire x1="-109.22" y1="-50.8" x2="-33.02" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-50.8" x2="-33.02" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-33.02" y="-20.32"/>
 </segment>
 </net>
 <net name="DATA_2" class="0">
@@ -29065,13 +29118,17 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <junction x="96.52" y="81.28"/>
 <portref moduleinst="INSTRUCTION_REGISTER1" port="I2"/>
 <wire x1="96.52" y1="-116.84" x2="78.74" y2="-116.84" width="0.1524" layer="91"/>
-<portref moduleinst="RAM1" port="D_2"/>
 <wire x1="96.52" y1="12.7" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
 <portref moduleinst="ROM1" port="D_2"/>
 <wire x1="63.5" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-17.78" x2="63.5" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-17.78" x2="-35.56" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-17.78" x2="63.5" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-17.78" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
 <junction x="63.5" y="12.7"/>
+<wire x1="-35.56" y1="-17.78" x2="-35.56" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-48.26" x2="-109.22" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-35.56" y="-17.78"/>
+<portref moduleinst="IO_PANEL1" port="D2"/>
 </segment>
 </net>
 <net name="DATA_1" class="0">
@@ -29112,13 +29169,17 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <junction x="93.98" y="78.74"/>
 <portref moduleinst="INSTRUCTION_REGISTER1" port="I1"/>
 <wire x1="93.98" y1="-114.3" x2="78.74" y2="-114.3" width="0.1524" layer="91"/>
-<portref moduleinst="RAM1" port="D_1"/>
 <wire x1="93.98" y1="15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <portref moduleinst="ROM1" port="D_1"/>
 <wire x1="60.96" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-15.24" x2="60.96" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-15.24" x2="-38.1" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-15.24" x2="60.96" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <junction x="60.96" y="15.24"/>
+<portref moduleinst="IO_PANEL1" port="D1"/>
+<wire x1="-109.22" y1="-45.72" x2="-38.1" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-45.72" x2="-38.1" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="-38.1" y="-15.24"/>
 </segment>
 </net>
 <net name="DATA_0" class="0">
@@ -29159,13 +29220,17 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <junction x="91.44" y="76.2"/>
 <portref moduleinst="INSTRUCTION_REGISTER1" port="I0"/>
 <wire x1="91.44" y1="-111.76" x2="78.74" y2="-111.76" width="0.1524" layer="91"/>
-<portref moduleinst="RAM1" port="D_0"/>
 <wire x1="20.32" y1="17.78" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
 <portref moduleinst="ROM1" port="D_0"/>
 <wire x1="58.42" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-12.7" x2="58.42" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-12.7" x2="-40.64" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-12.7" x2="58.42" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-12.7" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
 <junction x="58.42" y="17.78"/>
+<portref moduleinst="IO_PANEL1" port="D0"/>
+<wire x1="-40.64" y1="-12.7" x2="-40.64" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-43.18" x2="-109.22" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="-40.64" y="-12.7"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -29827,6 +29892,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-106.68" y1="66.04" x2="-106.68" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-43.18" y="66.04"/>
 <label x="-43.18" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR0"/>
+<wire x1="-106.68" y1="66.04" x2="-172.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-172.72" y1="66.04" x2="-172.72" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-106.68" y="66.04"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -29840,6 +29909,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-104.14" y1="63.5" x2="-104.14" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-40.64" y="63.5"/>
 <label x="-40.64" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR1"/>
+<wire x1="-104.14" y1="63.5" x2="-170.18" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="63.5" x2="-170.18" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-104.14" y="63.5"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -29853,6 +29926,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-101.6" y1="60.96" x2="-101.6" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-38.1" y="60.96"/>
 <label x="-38.1" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR2"/>
+<wire x1="-101.6" y1="60.96" x2="-167.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="60.96" x2="-167.64" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-101.6" y="60.96"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -29866,6 +29943,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-99.06" y1="58.42" x2="-99.06" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-35.56" y="58.42"/>
 <label x="-35.56" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR3"/>
+<wire x1="-99.06" y1="58.42" x2="-165.1" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="58.42" x2="-165.1" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-99.06" y="58.42"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -29879,6 +29960,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-96.52" y1="55.88" x2="-96.52" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-33.02" y="55.88"/>
 <label x="-33.02" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR4"/>
+<wire x1="-96.52" y1="55.88" x2="-162.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="55.88" x2="-162.56" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-96.52" y="55.88"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -29892,6 +29977,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-93.98" y1="53.34" x2="-93.98" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-30.48" y="53.34"/>
 <label x="-30.48" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR5"/>
+<wire x1="-93.98" y1="53.34" x2="-160.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="53.34" x2="-160.02" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-93.98" y="53.34"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -29905,6 +29994,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-91.44" y1="50.8" x2="-91.44" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-27.94" y="50.8"/>
 <label x="-27.94" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR6"/>
+<wire x1="-91.44" y1="50.8" x2="-157.48" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="50.8" x2="-157.48" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-91.44" y="50.8"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -29918,6 +30011,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-88.9" y1="48.26" x2="-88.9" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-25.4" y="48.26"/>
 <label x="-25.4" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR7"/>
+<wire x1="-88.9" y1="48.26" x2="-154.94" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="48.26" x2="-154.94" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-88.9" y="48.26"/>
 </segment>
 </net>
 <net name="N$42" class="0">
@@ -29931,6 +30028,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-86.36" y1="45.72" x2="-86.36" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-22.86" y="45.72"/>
 <label x="-22.86" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR8"/>
+<wire x1="-86.36" y1="45.72" x2="-152.4" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="45.72" x2="-152.4" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-86.36" y="45.72"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -29944,6 +30045,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-83.82" y1="43.18" x2="-83.82" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-20.32" y="43.18"/>
 <label x="-20.32" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR9"/>
+<wire x1="-83.82" y1="43.18" x2="-149.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="43.18" x2="-149.86" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-83.82" y="43.18"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -29957,6 +30062,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-81.28" y1="40.64" x2="-81.28" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-17.78" y="40.64"/>
 <label x="-17.78" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR10"/>
+<wire x1="-81.28" y1="40.64" x2="-147.32" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="40.64" x2="-147.32" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-81.28" y="40.64"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -29970,6 +30079,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-78.74" y1="38.1" x2="-78.74" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-15.24" y="38.1"/>
 <label x="-15.24" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR11"/>
+<wire x1="-78.74" y1="38.1" x2="-144.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="38.1" x2="-144.78" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-78.74" y="38.1"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -29983,6 +30096,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-76.2" y1="35.56" x2="-76.2" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-12.7" y="35.56"/>
 <label x="-12.7" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR12"/>
+<wire x1="-76.2" y1="35.56" x2="-142.24" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="35.56" x2="-142.24" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-76.2" y="35.56"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -29996,6 +30113,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-73.66" y1="33.02" x2="-73.66" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-10.16" y="33.02"/>
 <label x="-10.16" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR13"/>
+<wire x1="-73.66" y1="33.02" x2="-139.7" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="33.02" x2="-139.7" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-73.66" y="33.02"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -30009,6 +30130,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-71.12" y1="30.48" x2="-71.12" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-7.62" y="30.48"/>
 <label x="-7.62" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR14"/>
+<wire x1="-71.12" y1="30.48" x2="-137.16" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="30.48" x2="-137.16" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-71.12" y="30.48"/>
 </segment>
 </net>
 <net name="N$49" class="0">
@@ -30022,6 +30147,10 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="-68.58" y1="27.94" x2="-68.58" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-5.08" y="27.94"/>
 <label x="-5.08" y="78.74" size="1.778" layer="95" ratio="31" rot="R90"/>
+<portref moduleinst="IO_PANEL1" port="ADDR15"/>
+<wire x1="-68.58" y1="27.94" x2="-134.62" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="27.94" x2="-134.62" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-68.58" y="27.94"/>
 </segment>
 </net>
 <net name="PC_ADV" class="0">
